@@ -1,0 +1,180 @@
+15:37:58,390  INFO BusApplicationContext:456 - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@1a9009bb: startup date [Wed Jun 11 15:37:58 MDT 2014]; parent: Root WebApplicationContext
+15:37:58,761  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@33afc9b8: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@e5c71af
+15:38:00,988 DEBUG DomainDaoImpl:74 - Enter
+15:38:01,615 DEBUG DomainDaoImpl:77 - Exit: 0
+15:38:01,644 DEBUG DomainServiceImpl:132 - Enter
+15:38:01,646 DEBUG DomainDaoImpl:353 - Enter
+15:38:01,695 DEBUG DomainDaoImpl:375 - Exit
+15:38:01,699 DEBUG DomainServiceImpl:138 - Exit: NULL
+15:38:01,740 DEBUG DomainServiceImpl:63 - Enter
+15:38:01,751 DEBUG DomainDaoImpl:89 - Enter
+15:38:01,754 DEBUG DomainDaoImpl:110 - Calling JPA to persist the Domain
+15:38:01,910  WARN JDBCExceptionReporter:54 - SQL Warning: 10000, SQLState: 01J01
+15:38:01,911  WARN JDBCExceptionReporter:55 - Database 'nhindconfig' not created, connection made to existing database instead.
+15:38:02,054 DEBUG DomainDaoImpl:116 - Persisted the bare Domain
+15:38:02,062 DEBUG DomainDaoImpl:130 - Updating the domain with Address info
+15:38:02,063 DEBUG DomainDaoImpl:150 - Enter
+15:38:02,064 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: smtp@nologs.org | For: displayName | Domain: domainName | Endpoint: null | Status: ENABLED | Type: SMTP] to database
+15:38:02,065 DEBUG AddressDaoImpl:80 - Enter
+15:38:02,068 DEBUG AddressDaoImpl:89 - Exit
+15:38:02,070 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: xd@nologs.org | For: displayName | Domain: domainName | Endpoint: xd_endpoint | Status: ENABLED | Type: XD] to database
+15:38:02,086 DEBUG AddressDaoImpl:80 - Enter
+15:38:02,098 DEBUG AddressDaoImpl:89 - Exit
+15:38:02,110 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: empty@nologs.org | For: displayName | Domain: domainName | Endpoint: null | Status: ENABLED | Type: null] to database
+15:38:02,111 DEBUG AddressDaoImpl:80 - Enter
+15:38:02,118 DEBUG AddressDaoImpl:89 - Exit
+15:38:02,118 DEBUG DomainDaoImpl:195 - Calling JPA to perform update...
+15:38:02,123 DEBUG DomainDaoImpl:200 - Exit
+15:38:02,138 DEBUG DomainDaoImpl:135 - Returned from JPA: Domain ID=524288
+15:38:02,139 DEBUG DomainDaoImpl:139 - Exit
+15:38:02,294  INFO DomainServiceImpl:66 - Added Domain: domainName
+15:38:02,298 DEBUG DomainServiceImpl:68 - Exit
+15:38:02,371 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,473 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,497 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,544 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,566 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,612 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,624 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,638 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,666 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,677 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,697 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,734 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,753 DEBUG AddressDaoImpl:193 - Enter
+15:38:02,765 DEBUG AddressDaoImpl:233 - Exit
+15:38:02,821 DEBUG DomainDaoImpl:74 - Enter
+15:38:02,826 DEBUG DomainDaoImpl:77 - Exit: 1
+15:38:02,844 DEBUG DomainServiceImpl:132 - Enter
+15:38:02,849 DEBUG DomainDaoImpl:353 - Enter
+15:38:02,899 DEBUG DomainDaoImpl:375 - Exit
+15:38:02,900 DEBUG DomainServiceImpl:140 - Exit: [[ID: 524288 | Domain: domainName | Status: NEW | Addresses: 3]]
+15:38:02,948 DEBUG DomainServiceImpl:116 - Enter
+15:38:02,950 DEBUG DomainDaoImpl:221 - Enter
+15:38:02,950 DEBUG DomainDaoImpl:271 - Enter
+15:38:03,027 DEBUG DomainDaoImpl:283 - Exit
+15:38:03,029 DEBUG DomainDaoImpl:236 - Exit
+15:38:03,139  INFO DomainServiceImpl:119 - Modified Domain: domainName
+15:38:03,141 DEBUG DomainServiceImpl:122 - Exit
+15:38:03,146  INFO BusApplicationContext:1002 - Closing org.apache.cxf.bus.spring.BusApplicationContext@1a9009bb: startup date [Wed Jun 11 15:37:58 MDT 2014]; parent: Root WebApplicationContext
+15:38:03,146  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@33afc9b8: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@e5c71af
+15:49:48,848  INFO BusApplicationContext:456 - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@7361089b: startup date [Wed Jun 11 15:49:48 MDT 2014]; parent: Root WebApplicationContext
+15:49:49,049  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@451f9f60: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@37b0e229
+15:49:49,958 DEBUG DomainDaoImpl:74 - Enter
+15:49:50,290 DEBUG DomainDaoImpl:77 - Exit: 0
+15:49:50,307 DEBUG DomainServiceImpl:132 - Enter
+15:49:50,310 DEBUG DomainDaoImpl:353 - Enter
+15:49:50,337 DEBUG DomainDaoImpl:375 - Exit
+15:49:50,339 DEBUG DomainServiceImpl:138 - Exit: NULL
+15:49:50,375 DEBUG DomainServiceImpl:63 - Enter
+15:49:50,378 DEBUG DomainDaoImpl:89 - Enter
+15:49:50,381 DEBUG DomainDaoImpl:110 - Calling JPA to persist the Domain
+15:49:50,457  WARN JDBCExceptionReporter:54 - SQL Warning: 10000, SQLState: 01J01
+15:49:50,457  WARN JDBCExceptionReporter:55 - Database 'nhindconfig' not created, connection made to existing database instead.
+15:49:50,513 DEBUG DomainDaoImpl:116 - Persisted the bare Domain
+15:49:50,514 DEBUG DomainDaoImpl:130 - Updating the domain with Address info
+15:49:50,515 DEBUG DomainDaoImpl:150 - Enter
+15:49:50,516 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: smtp@nologs.org | For: displayName | Domain: domainName | Endpoint: null | Status: ENABLED | Type: SMTP] to database
+15:49:50,527 DEBUG AddressDaoImpl:80 - Enter
+15:49:50,537 DEBUG AddressDaoImpl:89 - Exit
+15:49:50,547 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: xd@nologs.org | For: displayName | Domain: domainName | Endpoint: xd_endpoint | Status: ENABLED | Type: XD] to database
+15:49:50,547 DEBUG AddressDaoImpl:80 - Enter
+15:49:50,548 DEBUG AddressDaoImpl:89 - Exit
+15:49:50,548 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: empty@nologs.org | For: displayName | Domain: domainName | Endpoint: null | Status: ENABLED | Type: null] to database
+15:49:50,549 DEBUG AddressDaoImpl:80 - Enter
+15:49:50,550 DEBUG AddressDaoImpl:89 - Exit
+15:49:50,551 DEBUG DomainDaoImpl:195 - Calling JPA to perform update...
+15:49:50,559 DEBUG DomainDaoImpl:200 - Exit
+15:49:50,568 DEBUG DomainDaoImpl:135 - Returned from JPA: Domain ID=589824
+15:49:50,579 DEBUG DomainDaoImpl:139 - Exit
+15:49:50,664  INFO DomainServiceImpl:66 - Added Domain: domainName
+15:49:50,664 DEBUG DomainServiceImpl:68 - Exit
+15:49:50,705 DEBUG AddressDaoImpl:193 - Enter
+15:49:50,807 DEBUG AddressDaoImpl:233 - Exit
+15:49:50,828 DEBUG AddressDaoImpl:193 - Enter
+15:49:50,865 DEBUG AddressDaoImpl:233 - Exit
+15:49:50,886 DEBUG AddressDaoImpl:193 - Enter
+15:49:50,927 DEBUG AddressDaoImpl:233 - Exit
+15:49:50,950 DEBUG AddressDaoImpl:193 - Enter
+15:49:50,958 DEBUG AddressDaoImpl:233 - Exit
+15:49:50,989 DEBUG AddressDaoImpl:193 - Enter
+15:49:51,005 DEBUG AddressDaoImpl:233 - Exit
+15:49:51,028 DEBUG AddressDaoImpl:193 - Enter
+15:49:51,062 DEBUG AddressDaoImpl:233 - Exit
+15:49:51,095 DEBUG AddressDaoImpl:193 - Enter
+15:49:51,110 DEBUG AddressDaoImpl:233 - Exit
+15:49:51,153 DEBUG DomainDaoImpl:74 - Enter
+15:49:51,160 DEBUG DomainDaoImpl:77 - Exit: 1
+15:49:51,172 DEBUG DomainServiceImpl:132 - Enter
+15:49:51,175 DEBUG DomainDaoImpl:353 - Enter
+15:49:51,220 DEBUG DomainDaoImpl:375 - Exit
+15:49:51,227 DEBUG DomainServiceImpl:140 - Exit: [[ID: 589824 | Domain: domainName | Status: NEW | Addresses: 3]]
+15:49:51,276 DEBUG DomainServiceImpl:116 - Enter
+15:49:51,277 DEBUG DomainDaoImpl:221 - Enter
+15:49:51,281 DEBUG DomainDaoImpl:271 - Enter
+15:49:51,359 DEBUG DomainDaoImpl:283 - Exit
+15:49:51,375 DEBUG DomainDaoImpl:236 - Exit
+15:49:51,487  INFO DomainServiceImpl:119 - Modified Domain: domainName
+15:49:51,490 DEBUG DomainServiceImpl:122 - Exit
+15:49:51,507  INFO BusApplicationContext:1002 - Closing org.apache.cxf.bus.spring.BusApplicationContext@7361089b: startup date [Wed Jun 11 15:49:48 MDT 2014]; parent: Root WebApplicationContext
+15:49:51,507  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@451f9f60: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@37b0e229
+17:06:09,994  INFO BusApplicationContext:456 - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@3db140e8: startup date [Wed Jun 11 17:06:09 MDT 2014]; parent: Root WebApplicationContext
+17:06:10,211  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5ed24cbe: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3718b940
+17:06:11,261 DEBUG DomainDaoImpl:74 - Enter
+17:06:11,658 DEBUG DomainDaoImpl:77 - Exit: 0
+17:06:11,676 DEBUG DomainServiceImpl:132 - Enter
+17:06:11,678 DEBUG DomainDaoImpl:353 - Enter
+17:06:11,702 DEBUG DomainDaoImpl:375 - Exit
+17:06:11,706 DEBUG DomainServiceImpl:138 - Exit: NULL
+17:06:11,735 DEBUG DomainServiceImpl:63 - Enter
+17:06:11,743 DEBUG DomainDaoImpl:89 - Enter
+17:06:11,744 DEBUG DomainDaoImpl:110 - Calling JPA to persist the Domain
+17:06:11,826  WARN JDBCExceptionReporter:54 - SQL Warning: 10000, SQLState: 01J01
+17:06:11,826  WARN JDBCExceptionReporter:55 - Database 'nhindconfig' not created, connection made to existing database instead.
+17:06:11,882 DEBUG DomainDaoImpl:116 - Persisted the bare Domain
+17:06:11,883 DEBUG DomainDaoImpl:130 - Updating the domain with Address info
+17:06:11,884 DEBUG DomainDaoImpl:150 - Enter
+17:06:11,887 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: smtp@nologs.org | For: displayName | Domain: domainName | Endpoint: null | Status: ENABLED | Type: SMTP] to database
+17:06:11,887 DEBUG AddressDaoImpl:80 - Enter
+17:06:11,896 DEBUG AddressDaoImpl:89 - Exit
+17:06:11,906 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: xd@nologs.org | For: displayName | Domain: domainName | Endpoint: xd_endpoint | Status: ENABLED | Type: XD] to database
+17:06:11,907 DEBUG AddressDaoImpl:80 - Enter
+17:06:11,912 DEBUG AddressDaoImpl:89 - Exit
+17:06:11,914 DEBUG DomainDaoImpl:175 - Adding [ID: 0 | Address: empty@nologs.org | For: displayName | Domain: domainName | Endpoint: null | Status: ENABLED | Type: null] to database
+17:06:11,916 DEBUG AddressDaoImpl:80 - Enter
+17:06:11,917 DEBUG AddressDaoImpl:89 - Exit
+17:06:11,934 DEBUG DomainDaoImpl:195 - Calling JPA to perform update...
+17:06:11,935 DEBUG DomainDaoImpl:200 - Exit
+17:06:11,936 DEBUG DomainDaoImpl:135 - Returned from JPA: Domain ID=655360
+17:06:11,936 DEBUG DomainDaoImpl:139 - Exit
+17:06:12,053  INFO DomainServiceImpl:66 - Added Domain: domainName
+17:06:12,059 DEBUG DomainServiceImpl:68 - Exit
+17:06:12,100 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,205 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,246 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,289 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,312 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,356 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,378 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,390 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,415 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,431 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,454 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,489 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,505 DEBUG AddressDaoImpl:193 - Enter
+17:06:12,526 DEBUG AddressDaoImpl:233 - Exit
+17:06:12,570 DEBUG DomainDaoImpl:74 - Enter
+17:06:12,572 DEBUG DomainDaoImpl:77 - Exit: 1
+17:06:12,588 DEBUG DomainServiceImpl:132 - Enter
+17:06:12,589 DEBUG DomainDaoImpl:353 - Enter
+17:06:12,614 DEBUG DomainDaoImpl:375 - Exit
+17:06:12,637 DEBUG DomainServiceImpl:140 - Exit: [[ID: 655360 | Domain: domainName | Status: NEW | Addresses: 3]]
+17:06:12,671 DEBUG DomainServiceImpl:116 - Enter
+17:06:12,672 DEBUG DomainDaoImpl:221 - Enter
+17:06:12,678 DEBUG DomainDaoImpl:271 - Enter
+17:06:12,742 DEBUG DomainDaoImpl:283 - Exit
+17:06:12,762 DEBUG DomainDaoImpl:236 - Exit
+17:06:12,926  INFO DomainServiceImpl:119 - Modified Domain: domainName
+17:06:12,927 DEBUG DomainServiceImpl:122 - Exit
+17:06:12,942  INFO BusApplicationContext:1002 - Closing org.apache.cxf.bus.spring.BusApplicationContext@3db140e8: startup date [Wed Jun 11 17:06:09 MDT 2014]; parent: Root WebApplicationContext
+17:06:12,943  INFO DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5ed24cbe: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3718b940
