@@ -28,7 +28,8 @@ import org.nhindirect.xd.transform.util.type.MimeType;
 
 public class XdmPackage {
 
-	private static final String STYLESHEET_NAME = "CCD.xsl";
+//	private static final String STYLESHEET_NAME = "CCD.xsl";
+	private static final String STYLESHEET_NAME = "CDA.xsl";
 	private static final Logger LOG = Logger.getLogger(XdmPackage.class);
 	
     private String messageId;
