@@ -25,7 +25,9 @@ import ihe.iti.xds_b._2007.ProvideAndRegisterDocumentSetRequestType;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 import javax.mail.Address;
@@ -38,6 +40,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.nhindirect.xd.common.DirectDocument2;
 import org.nhindirect.xd.common.DirectDocuments;
+import org.nhindirect.xd.common.DirectDocuments.SubmissionSet;
 import org.nhindirect.xd.common.XdmPackage;
 import org.nhindirect.xd.common.type.DirectDocumentType;
 import org.nhindirect.xd.common.type.FormatCodeEnum;
@@ -134,6 +137,30 @@ public class DefaultMimeXdsTransformer implements MimeXdsTransformer {
                         System.out.println("XDM FILE FOUND");
                         documents = xdmPackage.getDocuments();
 
+                        if(documents.getSubmissionSet() == null) {
+                        	documents.setSubmissionSet(new SubmissionSet());
+                        }
+                        if(isNullOrEmpty(documents.getSubmissionSet().getAuthorTelecommunication())) {
+                        	documents.getSubmissionSet().setAuthorTelecommunication(from);
+                            LOGGER.debug("transform - Set the submission set AuthorTelecommunication value to: " + from);
+                        }
+                        List<String> intendedRecipientList = documents.getSubmissionSet().getIntendedRecipient();
+                        if(intendedRecipientList == null) {
+                        	intendedRecipientList = new ArrayList<String>();
+                        	documents.getSubmissionSet().setIntendedRecipient(intendedRecipientList);
+                        }
+                        if(intendedRecipientList.isEmpty()) {
+                            for (Address address : recipients) {
+                            	documents.getSubmissionSet().getIntendedRecipient().add("||^^Internet^" + address.toString());
+                                LOGGER.debug("transform - Added intended recipient to the submission set: " + "||^^Internet^" + address.toString());
+                            }
+                        }
+                        if(documents.getSubmissionSet().getSubmissionTime() == null) {
+                            documents.getSubmissionSet().setSubmissionTime(sentDate);
+                        }
+                        if(isNullOrEmpty(documents.getSubmissionSet().getUniqueId())) {
+                            documents.getSubmissionSet().setUniqueId(UUID.randomUUID().toString());
+                        }
                         break;
                     }
                     BodyPart bodyPart = mimeMultipart.getBodyPart(i);
@@ -206,6 +233,10 @@ public class DefaultMimeXdsTransformer implements MimeXdsTransformer {
         }
 
         return request;
+    }
+    
+    private boolean isNullOrEmpty(String toCheck) {
+    	return ((toCheck == null) || "".equals(toCheck.trim()));
     }
 
     /*
